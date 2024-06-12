@@ -25,22 +25,24 @@
         <label for="date">When will you be attending?</label>
         <select id="date">
             <option value="">Select a date</option>
-            <option value="1">June 17th</option>
-            <option value="2">June 19th</option>
-            <option value="3">June 24th</option>
-            <option value="4">June 26th</option>
+            <option value="June 17th">June 17th</option>
+            <option value="June 19th">June 19th</option>
+            <option value="June 24th">June 24th</option>
+            <option value="June 26th">June 26th</option>
         </select><br><br>
 
     <!--A checkbox group for selecting preferences.-->
-        <!--it is less preferences and more restrictions, but I feel it fits the spirit of the requirements-->
+       
         Dietary Restrictions:<br>
-        <input type="checkbox" name="preference1" id="preference1" value="noGluten">
+        <input type="checkbox" name="preference" id="preference0" value="1">
+        <label for="preference0">I am not allergic to anything</label><br>
+        <input type="checkbox" name="preference" id="preference1" value="1">
         <label for="preference1">I am allergic to gluten</label><br>
-        <input type="checkbox" name="preference2" id="preference2" value="noSeafood">
+        <input type="checkbox" name="preference" id="preference2" value="1">
         <label for="preference2">I am allergic to seafood</label><br>
-        <input type="checkbox" name="preference3" id="preference3" value="noPeanuts">
+        <input type="checkbox" name="preference" id="preference3" value="1">
         <label for="preference3">I am allergic to peanuts</label><br>
-        <input type="checkbox" name="preference4" id="preference4" value="noDairy">
+        <input type="checkbox" name="preference" id="preference4" value="1">
         <label for="preference4">I am allergic to dairy</label><br><br>
             
     <!--and a submit button to finalize the registration.-->
@@ -50,5 +52,6 @@
     <!--Add a <div> element below the form where the registration details will be displayed after submission.-->
     <div id="registrationHolder"></div>
 
+    <script src="script.js"></script>
 </body>
 </html>
