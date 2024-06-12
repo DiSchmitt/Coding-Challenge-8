@@ -54,3 +54,5 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     registrationHolder.appendChild(registrationEntry);
     document.getElementById('registrationForm').reset();
 });
+//As far as I could tell, the end of task three and all of task four are pretty much the same, or I am doing too much for task three.
+//That should be it, have a nice day!

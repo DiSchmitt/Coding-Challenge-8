@@ -2,56 +2,59 @@
 <!--Task 1: Setting up the HTML file with the basic structure:-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Registration Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Registration Form</h1>
     <!--Task 2: Inside index.html, insert a <form> element...-->
     <form id="registrationForm">
+      <!--that includes:-->
 
-    <!--that includes:-->
+      <!--A text input for the registrant’s name.-->
+      <label for="name">Please print your name:</label>
+      <input type="text" id="name" /> <br /><br />
 
-    <!--A text input for the registrant’s name.-->
-        <label for="name">Please print your name:</label>
-        <input type="text" id="name"> <br><br>
+      <!--A text input for the registrant’s email address.-->
+      <label for="email">Please fill out yor email:</label>
+      <input type="text" id="email" /> <br /><br />
 
-    <!--A text input for the registrant’s email address.-->
-        <label for="email">Please fill out yor email:</label>
-        <input type="text" id="email"> <br><br>
+      <!--A dropdown selection for the registrant to choose an event date.-->
+      <label for="date">When will you be attending?</label>
+      <select id="date">
+        <option value="">Select a date</option>
+        <option value="June 17th">June 17th</option>
+        <option value="June 19th">June 19th</option>
+        <option value="June 24th">June 24th</option>
+        <option value="June 26th">June 26th</option></select
+      ><br /><br />
 
-    <!--A dropdown selection for the registrant to choose an event date.-->
-        <label for="date">When will you be attending?</label>
-        <select id="date">
-            <option value="">Select a date</option>
-            <option value="June 17th">June 17th</option>
-            <option value="June 19th">June 19th</option>
-            <option value="June 24th">June 24th</option>
-            <option value="June 26th">June 26th</option>
-        </select><br><br>
+      <!--A checkbox group for selecting preferences.-->
+      <!--I wasn't sure whether a 'checkbox group' was refering to radio buttons or checkboxes,-->
+      <!--as the former better fits the example you gave:-->
+      <!--Meal Preference: Vegetarian, Non-Vegetarian, Vegan-->
+      <!--While checkboxes fit the name better-->
+      <!--I have decided to try and follow the letter of the law and use checkboxes-->
+      Dietary Restrictions:<br />
+      <input type="checkbox" name="preference" id="preference0" value="1" />
+      <label for="preference0">I am not allergic to anything</label><br />
+      <input type="checkbox" name="preference" id="preference1" value="1" />
+      <label for="preference1">I am allergic to gluten</label><br />
+      <input type="checkbox" name="preference" id="preference2" value="1" />
+      <label for="preference2">I am allergic to seafood</label><br />
+      <input type="checkbox" name="preference" id="preference3" value="1" />
+      <label for="preference3">I am allergic to peanuts</label><br />
+      <input type="checkbox" name="preference" id="preference4" value="1" />
+      <label for="preference4">I am allergic to dairy</label><br /><br />
 
-    <!--A checkbox group for selecting preferences.-->
-       
-        Dietary Restrictions:<br>
-        <input type="checkbox" name="preference" id="preference0" value="1">
-        <label for="preference0">I am not allergic to anything</label><br>
-        <input type="checkbox" name="preference" id="preference1" value="1">
-        <label for="preference1">I am allergic to gluten</label><br>
-        <input type="checkbox" name="preference" id="preference2" value="1">
-        <label for="preference2">I am allergic to seafood</label><br>
-        <input type="checkbox" name="preference" id="preference3" value="1">
-        <label for="preference3">I am allergic to peanuts</label><br>
-        <input type="checkbox" name="preference" id="preference4" value="1">
-        <label for="preference4">I am allergic to dairy</label><br><br>
-            
-    <!--and a submit button to finalize the registration.-->
-        <button type="submit">Register</button>
+      <!--and a submit button to finalize the registration.-->
+      <button type="submit">Register</button>
     </form>
 
     <!--Add a <div> element below the form where the registration details will be displayed after submission.-->
     <div id="registrationHolder"></div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
